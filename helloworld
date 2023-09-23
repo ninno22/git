@@ -1,2 +1,111 @@
 update hello world?
 x2
+DNS, resolves IP address to domain name and domain name to IP address.
+HTTP, a protocol that allows us to access the world wide web.
+HTTP proxy, a proxy that transfers information and communicates between the client and the server.
+HTTPS, a protocol that is an extension of http that uses encryption for communications.
+SMTP, an application that is used to send and receive emails between users. When an email is sent, it is pushed to the SMTP application and from there the application relays the email and its contents to the receiver.
+RAID, a group of disks that are used to create a logical volume.
+In a file system hierarchy it is directories, which contain information including files and other directories, which can also be called subdirectories, and so on and so forth.
+The public key is used for encryption, and it is shared with the application that is used to authenticate the user. Private key is used to decrypt it and the send the data back for decryption. 
+Root, UID of 0
+ls -a, lists all files
+rm -r, remove directory
+free
+grep -r my kongfu is the best /path/to/directory
+SSH, a secure shell that is used to communicate securely between a client and the server
+env, to get all environment variables***
+ifconfig it is a network tool that has to be installed
+Its an autocomplete feature that autofills the next available path to a directory or file.
+df -h
+nslookup
+chown, chmod
+adds the execute permission to a file.
+0750 means the user has read, write, and execute permissions on the file, the group has read and write permissions,  and everyone else has no permissions.
+0750 on a directory means, the owner can read, write, and execute, the group can read and write but not execute.
+useradd
+usermod to add, gpass -d to remove
+Bash alias are shortcuts that allow you to execute multiple functions or commands in a single command
+usermod -c “email” (username)***
+CTRL-c interrupts or stops a running process 
+CTRL-d logs you out of the interface
+CTRL-z suspends the current process and places it in the background
+/etc/services is a file that is used to translate human readable service names to port numbers
+For standard output you use the > symbol, for standard error you use 2>
+Linux is open source meaning the source code can be viewed and modified by any user, unix is the opposite, requiring a license to use and is closed source.
+Telnet transfers data using plain simpletext while SSH uses encryption to transfer data making it a more secure method.
+WA, waittime which is the percentage of time cpu is writing and reading to and form the disk. ID, idle time, percentage of time CPU is not executing processes and are available for other tasks. Sy, systematize, percentage of time CPU used to execute tasks. command to see load average is either top or uptime.
+q
+Linux kernel module are pieces of code that can be loaded and unloaded the the kernel upon command. It is used to extend the functionality of the kernel without having to reboot the system.
+Press any key to interrupt the boot loader when booting up the system, select the kernel you want to use in the GRUB menu and press a, press b to boot your system.
+Refresh the page, check the url for any mistypes, check to see if network is up and running, check if dns is up and running, check if http is up and running.
+IMCP is a protocol that is used by devices within a network to communicate data transmission errors.
+“&” after a command puts the application in the background.
+“& disown” after a command puts the application in the background and stays persistent even after the shell session is terminated.
+packet filter***
+Virtual memory is a memory that is separate from the physical memory on your machine.
+Swap is space on a disk that is used when the amount of physical RAM memory is full.
+record***
+RR***
+split horizon ****
+Stickybits are special permissions that allow the root user or the owner of the file to delete or rename the file.
+Immutable bit, cannot be modified, deleted, or renamed even if owner has all available permissions.
+symlinks are pointers to the original file that is linked. hard links create an exact copy of the file that is linked. removing the source of a symlink will cause the symlink to die, removing the source of hardline has no effect on file except that the original file is removed but you would still have an exact copy of the file.
+inode is a data structure that keeps track of all files and directories within a file system. all files have a filename and node number as well as device id, group id, user id, and file permissions.
+force/trigger fsck***
+SNMP is used for managing devices on IP networks.
+run level are numbered from 0 to 6, they are the operating state of the linux system and define which system services are operating. you can use the command who -r to get the current level.
+SSH port forwarding is a protocol that forwards data and communications to another server  using encrypted SSH connection.
+local forwarding is transferring data from your local machine to a remote server and remote forwarding is vice versa, the transferring of data from a remote server to your local machine.
+first you edit and add username to /etc/passwd file, then you add the group by editing /etc/group file, create a home directory for the user, set user password by using passwd command.
+major and minor numbers***
+mknod allows you to create special device files and is used to communicate with hardware devices.
+several possibilities, you may be out of i-nodes. there may be files hidden by mounpoints, or there may be space taken up by files that have been deleted but are still open.
+it may not be showing the freed space because even after the file is deleted there may be still processes holding the file open and using it.
+ps, show all active processes 
+it becomes a zombie process, meaning it dies but the bad thing about it is that it still takes up space from available memory.
+Ready state, a state in which a process is ready and waiting for its execution. Blocked state, process doesn’t execute unless a process event occurs. Running state, process is currently executing.
+netstat command along with piping with grep
+a zombie process is a dead process that lost its parent process so it became a zombie process, it dies but it still uses up from available memory.
+(script) |tee (filename)
+it will activate ip forwarding.
+certificate***
+yes you can.
+its used to help secure multiple domains or hosts.
+files and directories
+thread is a segment of a process, there are multiple threads in a process. a fork would duplicate it but it would have a different process id
+fork makes a copy of the process and starts it as a new process. exec replaces the process with a new one.
+nohup is used to keep process running even after exiting the shell.
+export***
+ntp***
+ntp***
+upgrade kernel***
+host,channel***
+ulimit***
+caret***
+tarpipe***
+systemctl status hhtpd
+rpm command
+better package***
+block***
+localhost is the name of the device I’m using, it can fail because of network configuration issues.
+ping and traceroute***
+netstat
+no
+nonroutable***
+Vlan is a virtual network that groups together devices that share a physical LAN.
+ARP***
+TCP is a connection oriented protocol while UDP is a connectionless oriented protocol, UDP is quicker than TCP but not as safe.
+purpose of a default gateway is that it routes traffic between LAN and external networks.
+iproute
+connection management, reliability, flow control, and congestion control
+ port 8080 is the source port, destination is port 443
+ use ifconfig command ***
+ ipv4 ipv6***
+snat***
+ chmond 744 /bin/chmod
+enter into single user mode and change root password
+mkdir, touch, chmod, chown, systemctl
+ pwd
+ have a great career and know the linux system by heart on jan 19 2038, also superbug
+ shutdown -r
